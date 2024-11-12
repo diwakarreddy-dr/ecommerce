@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
@@ -16,9 +17,9 @@ const Header = () => {
         </div>
         <nav className="nav-menu">
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/men">Men</a></li>
-            <li><a href="/women">Women</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/men">Men</Link></li>
+            <li><Link to="/women">Women</Link></li>
           </ul>
         </nav>
         <div className="header-icons">
@@ -46,9 +47,9 @@ const Header = () => {
             {isMenuOpen && (
               <nav className="dropdown-menu">
                 <ul>
-                  <li><a href="/">Home</a></li>
-                  <li><a href="/men">Men</a></li>
-                  <li><a href="/women">Women</a></li>
+                  <li><Link to="/">Home</Link></li>
+                  <li><Link to="/men">Men</Link></li>
+                  <li><Link to="/women">Women</Link></li>
                 </ul>
               </nav>
             )}
