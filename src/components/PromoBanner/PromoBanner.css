@@ -29,7 +29,7 @@
   line-height: 1.2;
 }
 
-.shop-now-btn {
+/* .shop-now-btn {
   background-color: #fff;
   border: none;
   padding: 1rem 2rem;
@@ -44,7 +44,7 @@
 .shop-now-btn:hover {
   background-color: #333;
   color: white;
-}
+} */
 
 .banner-image {
   flex: 1;

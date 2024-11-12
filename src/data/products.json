@@ -1,0 +1,294 @@
+{
+  "watches": [
+    {
+      "id": "w1",
+      "name": "Classic Automatic",
+      "category": "men",
+      "subCategory": "luxury",
+      "brand": "Rolex",
+      "image": "./watch-m1.avif",
+      "price": 299.99,
+      "discountedPrice": 249.99,
+      "discount": 17,
+      "rating": 4.5,
+      "reviews": 128,
+      "description": "Elegant automatic watch with classic styling and premium materials",
+      "features": [
+        "Water Resistant",
+        "Automatic Movement",
+        "Date Display",
+        "Stainless Steel Case"
+      ],
+      "specifications": {
+        "case": "Stainless Steel",
+        "movement": "Automatic",
+        "diameter": "42mm",
+        "thickness": "12mm",
+        "waterResistance": "50m"
+      },
+      "inStock": true,
+      "colors": ["Black", "Brown", "Silver"]
+    },
+    {
+      "id": "w2",
+      "name": "Submariner",
+      "category": "men",
+      "subCategory": "luxury",
+      "brand": "Rolex",
+      "image": "./watch-m2.avif",
+      "price": 199.99,
+      "discountedPrice": 179.99,
+      "discount": 10,
+      "rating": 4.3,
+      "reviews": 245,
+      "description": "Most iconic and recognized luxury dive watches in the world",
+      "features": [
+        "Water Resistant",
+        "Automatic Movement",
+        "Date Display",
+        "Stainless Steel Case"
+      ],
+      "specifications": {
+        "case": "Stainless Steel",
+        "movement": "Automatic",
+        "diameter": "42mm",
+        "thickness": "12mm",
+        "waterResistance": "30m"
+      },
+      "inStock": true,
+      "colors": ["Black", "White", "Blue"]
+    },
+    {
+      "id": "w3",
+      "name": "GMT-Master II",
+      "category": "men",
+      "subCategory": "luxury",
+      "brand": "Rolex",
+      "image": "./watch-m3.avif",
+      "price": 599.99,
+      "discountedPrice": 499.99,
+      "discount": 17,
+      "rating": 4.8,
+      "reviews": 89,
+      "description": "Luxurious sports watch with a dual time zone functon",
+      "features": [
+        "Diamond Markers",
+        "Mother of Pearl Dial",
+        "Sapphire Crystal",
+        "Swiss Movement"
+      ],
+      "specifications": {
+        "case": "Stainless Steel",
+        "movement": "Automatic",
+        "diameter": "34mm",
+        "thickness": "8mm",
+        "waterResistance": "30m"
+      },
+      "inStock": true,
+      "colors": ["Black", "Blue", "Silver"]
+    },
+    {
+      "id": "w4",
+      "name": "Day-Date 40",
+      "category": "men",
+      "subCategory": "luxury",
+      "brand": "Rolex",
+      "image": "./watch-m4.avif",
+      "price": 149.99,
+      "discountedPrice": 129.99,
+      "discount": 13,
+      "rating": 4.4,
+      "reviews": 167,
+      "description": "Prestigious luxury watch with a date display and an 18k gold or platinum construction",
+      "features": [
+        "Date Display",
+        "Stainless Steel Case",
+        "Sapphire Crystal",
+        "Swiss Movement"
+      ],
+      "specifications": {
+        "case": "Stainless Steel",
+        "movement": "Automatic",
+        "diameter": "40mm",
+        "thickness": "12mm",
+        "waterResistance": "100m"
+      },
+      "inStock": true,
+      "colors": ["Black", "Green", "Orange"]
+    },
+    {
+      "id": "w5",
+      "name": "Oyster Perpetual 41",
+      "category": "men",
+      "subCategory": "casual",
+      "brand": "Rolex",
+      "image": "./watch-m5.avif",
+      "price": 179.99,
+      "discountedPrice": 159.99,
+      "discount": 11,
+      "rating": 4.6,
+      "reviews": 203,
+      "description": "Versatile watch with a date display and a mesh steel strap",
+      "features": [
+        "Ultra-Thin Case",
+        "Mesh Steel Strap",
+        "Date Display",
+        "Quick Release Strap"
+      ],
+      "specifications": {
+        "case": "Brushed Steel",
+        "movement": "Automatic",
+        "diameter": "41mm",
+        "thickness": "7mm",
+        "waterResistance": "30m"
+      },
+      "inStock": true,
+      "colors": ["Silver", "Black", "Gold"]
+    },
+    {
+      "id": "w6",
+      "name": "Datejust 36",
+      "category": "women",
+      "subCategory": "luxury",
+      "brand": "Rolex",
+      "image": "./watch-w1.avif",
+      "price": 399.99,
+      "discountedPrice": 339.99,
+      "discount": 15,
+      "rating": 4.7,
+      "reviews": 156,
+      "description": "Iconic timepiece combining elegant style with modern functionality",
+      "features": [
+        "Cyclops Lens",
+        "Jubilee Bracelet",
+        "Date Display",
+        "Automatic Movement"
+      ],
+      "specifications": {
+        "case": "Stainless Steel",
+        "movement": "Automatic",
+        "diameter": "36mm",
+        "thickness": "11mm",
+        "waterResistance": "100m"
+      },
+      "inStock": true,
+      "colors": ["Silver", "Rose Gold", "Two-Tone"]
+    },
+    {
+      "id": "w7",
+      "name": "Lady Datejust",
+      "category": "women",
+      "subCategory": "luxury",
+      "brand": "Rolex",
+      "image": "./watch-w2.avif",
+      "price": 799.99,
+      "discountedPrice": 679.99,
+      "discount": 15,
+      "rating": 4.9,
+      "reviews": 89,
+      "description": "Sophisticated annual calendar watch with dual time zone function",
+      "features": [
+        "Annual Calendar",
+        "Dual Time Zone",
+        "Ring Command Bezel",
+        "Chromalight Display"
+      ],
+      "specifications": {
+        "case": "18kt Gold",
+        "movement": "Automatic",
+        "diameter": "42mm",
+        "thickness": "14mm",
+        "waterResistance": "100m"
+      },
+      "inStock": true,
+      "colors": ["Yellow Gold", "White Gold", "Everose Gold"]
+    },
+    {
+      "id": "w8",
+      "name": "Day-Date 36",
+      "category": "women",
+      "subCategory": "luxury",
+      "brand": "Rolex",
+      "image": "./watch-w3.avif",
+      "price": 449.99,
+      "discountedPrice": 384.99,
+      "discount": 14,
+      "rating": 4.6,
+      "reviews": 112,
+      "description": "Luxurious annual calendar watch with a date display",
+      "features": [
+        "Bidirectional Rotatable Bezel",
+        "Oysterflex Bracelet",
+        "Chromalight Display",
+        "Professional Clasp"
+      ],
+      "specifications": {
+        "case": "White Gold",
+        "movement": "Automatic",
+        "diameter": "42mm",
+        "thickness": "12mm",
+        "waterResistance": "100m"
+      },
+      "inStock": true,
+      "colors": ["Black", "Blue"]
+    },
+    {
+      "id": "w9",
+      "name": "Date-Date 36",
+      "category": "women",
+      "subCategory": "luxury",
+      "brand": "Rolex",
+      "image": "./watch-w4.avif",
+      "price": 349.99,
+      "discountedPrice": 297.99,
+      "discount": 15,
+      "rating": 4.5,
+      "reviews": 178,
+      "description": "Luxurious watch with a date display and a 24-hour display",
+      "features": [
+        "24-Hour Display",
+        "Date Function",
+        "Luminescent Display",
+        "Oyster Bracelet"
+      ],
+      "specifications": {
+        "case": "Oystersteel",
+        "movement": "Automatic",
+        "diameter": "42mm",
+        "thickness": "12mm",
+        "waterResistance": "100m"
+      },
+      "inStock": true,
+      "colors": ["White", "Black"]
+    },
+    {
+      "id": "w10",
+      "name": "Day-Date 36",
+      "category": "women",
+      "subCategory": "dress",
+      "brand": "Rolex",
+      "image": "./watch-w5.avif",
+      "price": 599.99,
+      "discountedPrice": 509.99,
+      "discount": 15,
+      "rating": 4.8,
+      "reviews": 92,
+      "description": "Elegant dress watch featuring moonphase complication",
+      "features": [
+        "Moonphase Display",
+        "Date Function",
+        "Leather Strap",
+        "Domed Bezel"
+      ],
+      "specifications": {
+        "case": "18kt Everose Gold",
+        "movement": "Automatic",
+        "diameter": "39mm",
+        "thickness": "13mm",
+        "waterResistance": "50m"
+      },
+      "inStock": true,
+      "colors": ["Brown", "Black"]
+    }
+  ]
+} 

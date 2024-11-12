@@ -1,11 +1,11 @@
-.men-watches-container {
+.women-watches-container {
     padding: 2rem;
     max-width: 1200px;
     margin: 0 auto;
-    background-color: #f5f5f5;
+    background-color: #f5f5f5;  
   }
   
-  .men-watches-container h1 {
+  .women-watches-container h1 {
     text-align: center;
     margin-bottom: 2rem;
     color: #333;
@@ -135,7 +135,7 @@
   }
   
   @media (max-width: 768px) {
-    .men-watches-container {
+    .women-watches-container {
       padding: 1rem;
     }
     
