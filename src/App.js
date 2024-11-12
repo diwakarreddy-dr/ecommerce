@@ -4,7 +4,7 @@ import Header from './components/Header/Header';
 import PromoBanner from './components/PromoBanner/PromoBanner';
 import Features from './components/Features/Features';
 import MenWatches from './components/pages/MenWatches';
-
+import WomenWatches from './components/pages/WomenWatches';
 function App() {
   return (
     <Router>
@@ -18,6 +18,7 @@ function App() {
             </>
           } />
           <Route path="/men" element={<MenWatches />} />
+          <Route path="/women" element={<WomenWatches />} />
         </Routes>
       </div>
     </Router>

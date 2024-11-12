@@ -1,21 +1,21 @@
 import React from 'react';
-import './MenWatches.css';
+import './WomenWatches.css';
 import productsData from '../../data/products.json';
 
-const MenWatches = () => {
-  // Filter watches for men's and unisex categories
-  const menWatches = productsData.watches.filter(
-    watch => watch.category === 'men' 
+const WomenWatches = () => {
+  // Filter watches for women's and unisex categories
+  const womenWatches = productsData.watches.filter(
+    watch => watch.category === 'women' 
   );
 
   // Group watches by their type (luxury, sport, etc)
   const watchCategories = [
     {
-      id: 1,
-      watches: menWatches
+      id: 6,
+      watches: womenWatches
     }
   ];
-console.log(menWatches, watchCategories);
+console.log(womenWatches, watchCategories);
 
   const calculateDiscountedPrice = (originalPrice, discount) => {
     const price = parseFloat(originalPrice?.replace('$', ''));
@@ -54,13 +54,13 @@ console.log(menWatches, watchCategories);
   };
 
   return (
-    <div className="men-watches-container">
-      <h1>Men's Watches</h1>
+    <div className="women-watches-container">
+      <h1>Women's Watches</h1>
       {watchCategories.map(category => (
         <div key={category.id} className="watch-category">
           <h2>{category.name}</h2>
           <div className="watches-grid">
-            {menWatches && menWatches?.map(watch => (
+            {womenWatches && womenWatches?.map(watch => (
               <div key={watch.id} className="watch-card">
                 <img src={watch.image} alt={watch.name} />
                 <div className="watch-details">
@@ -95,4 +95,4 @@ console.log(menWatches, watchCategories);
   );
 };
 
-export default MenWatches;
+export default WomenWatches;
