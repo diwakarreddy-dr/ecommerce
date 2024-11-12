@@ -1,0 +1,79 @@
+.promo-banner {
+  background-color: black;
+  min-height: 500px;
+  display: flex;
+  padding: 2rem 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+}
+
+.banner-content h2 {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.banner-content h1 {
+  font-size: 3.5rem;
+  color: white;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+.shop-now-btn {
+  background-color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: fit-content;
+  border-radius: 5px;
+}
+
+.shop-now-btn:hover {
+  background-color: #333;
+  color: white;
+}
+
+.banner-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-image img {
+  max-height: 400px;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .promo-banner {
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+    text-align: center;
+  }
+  .shop-now-btn{
+    align-self: center;
+  }
+
+  .banner-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .banner-image {
+    margin-top: 2rem;
+  }
+} 
