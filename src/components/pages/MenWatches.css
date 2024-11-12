@@ -1,0 +1,145 @@
+.men-watches-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .men-watches-container h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  .watch-category {
+    margin-bottom: 3rem;
+  }
+  
+  .watch-category h2 {
+    color: #333;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .watches-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  .watch-card {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    background: white;
+  }
+  
+  .watch-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  .watch-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .watch-details {
+    padding: 1rem;
+  }
+  
+  .brand {
+    font-size: 1.2rem;
+    color: #666;
+    
+    margin:0 0 0.25rem 0;
+  }
+  
+  .watch-details h3 {
+    margin:0 0 0.5rem 0;
+    color: #333;
+    font-size: 1rem;
+  }
+  
+  .price-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+  }
+  
+  
+  
+  .discount {
+    color: #e53935;
+    margin: 0;
+  }
+  
+  .discounted-price {
+    font-weight: bold;
+    color: #000;
+    margin: 0;
+  }
+  .original-price {
+    text-decoration: line-through;
+    color: #999;
+    margin: 0;
+  }
+  
+  .rating {
+    margin: 0.5rem 0;
+  }
+  
+  .star {
+    color: gold;
+  }
+  
+  .star-empty {
+    color: #ddd;
+  }
+  
+  .star-half {
+    position: relative;
+    display: inline-block;
+    color: #ddd;
+  }
+  
+  .star-half:before {
+    content: '★';
+    position: absolute;
+    left: 0;
+    width: 50%;
+    color: gold;
+    overflow: hidden;
+  }
+  
+  .add-to-cart-btn {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 0.5rem;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #333;
+  }
+  
+  @media (max-width: 768px) {
+    .men-watches-container {
+      padding: 1rem;
+    }
+    
+    .watches-grid {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+  }
