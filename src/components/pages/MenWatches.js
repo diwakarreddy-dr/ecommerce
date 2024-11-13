@@ -17,7 +17,7 @@ const MenWatches = () => {
   ];
 console.log(menWatches, watchCategories);
 
-  const calculateDiscountedPrice = (originalPrice, discount) => {
+  const discountedPrice = (originalPrice, discount) => {
     const price = parseFloat(originalPrice?.replace('$', ''));
     const discountPercent = parseInt(discount) / 100;
     const discountedPrice = price * (1 - discountPercent);
