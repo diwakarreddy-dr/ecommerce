@@ -1,0 +1,84 @@
+{
+  "cartItems": [
+    {
+      "id": "cart1",
+      "name": "Submariner",
+      "category": "men",
+      "subCategory": "luxury",
+      "brand": "Rolex",
+      "image": "./watch-m2.avif",
+      "price": 199.99,
+      "discountedPrice": 179.99,
+      "discount": 10,
+      "rating": 4.3,
+      "quantity": 1,
+      "color": "Black",
+      "specifications": {
+        "case": "Stainless Steel",
+        "movement": "Automatic",
+        "diameter": "42mm",
+        "waterResistance": "30m"
+      }
+    },
+    {
+      "id": "cart2",
+      "name": "GMT-Master II",
+      "category": "men",
+      "subCategory": "luxury",
+      "brand": "Rolex",
+      "image": "./watch-m3.avif",
+      "price": 599.99,
+      "discountedPrice": 499.99,
+      "discount": 17,
+      "rating": 4.8,
+      "quantity": 2,
+      "color": "Silver",
+      "specifications": {
+        "case": "Stainless Steel",
+        "movement": "Automatic",
+        "diameter": "34mm",
+        "waterResistance": "30m"
+      }
+    },
+    {
+      "id": "cart3",
+      "name": "Day-Date 36",
+      "category": "women",
+      "subCategory": "luxury",
+      "brand": "Rolex",
+      "image": "./watch-w3.avif",
+      "price": 449.99,
+      "discountedPrice": 384.99,
+      "discount": 14,
+      "rating": 4.6,
+      "quantity": 1,
+      "color": "Blue",
+      "specifications": {
+        "case": "White Gold",
+        "movement": "Automatic",
+        "diameter": "42mm",
+        "waterResistance": "100m"
+      }
+    },
+    {
+      "id": "cart4",
+      "name": "Cellini Moonphase",
+      "category": "unisex",
+      "subCategory": "dress",
+      "brand": "Rolex",
+      "image": "./watch-m10.avif",
+      "price": 599.99,
+      "discountedPrice": 509.99,
+      "discount": 15,
+      "rating": 4.8,
+      "quantity": 1,
+      "color": "Brown",
+      "specifications": {
+        "case": "18kt Everose Gold",
+        "movement": "Automatic",
+        "diameter": "39mm",
+        "waterResistance": "50m"
+      }
+    }
+  ]
+} 
