@@ -2,11 +2,22 @@ import React from 'react';
 import './MenWatches.css';
 import productsData from '../../data/products.json';
 
-const MenWatches = () => {
-  // Filter watches for men's and unisex categories
+const MenWatches = ({ addToCart }) => {
   const menWatches = productsData.watches.filter(
-    watch => watch.category === 'men' 
+    watch => watch.category === 'men' || watch.category === 'unisex'
   );
+
+  const handleAddToCart = (watch) => {
+    addToCart({
+      id: watch.id,
+      name: watch.name,
+      brand: watch.brand,
+      image: watch.image,
+      price: watch.price,
+      discountedPrice: watch.discountedPrice,
+      quantity: 1
+    });
+  };
 
   // Group watches by their type (luxury, sport, etc)
   const watchCategories = [
@@ -17,16 +28,11 @@ const MenWatches = () => {
   ];
 console.log(menWatches, watchCategories);
 
-  const discountedPrice = (originalPrice, discount) => {
+  const calculateDiscountedPrice = (originalPrice, discount) => {
     const price = parseFloat(originalPrice?.replace('$', ''));
     const discountPercent = parseInt(discount) / 100;
     const discountedPrice = price * (1 - discountPercent);
     return `$${discountedPrice.toFixed(2)}`;
-  };
-
-  const handleAddToCart = (watch) => {
-    // TODO: Implement actual cart functionality
-    alert(`${watch.name} added to cart!`);
   };
 
   const renderStars = (rating) => {

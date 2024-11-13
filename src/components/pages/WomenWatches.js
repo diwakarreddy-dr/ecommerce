@@ -2,7 +2,7 @@ import React from 'react';
 import './WomenWatches.css';
 import productsData from '../../data/products.json';
 
-const WomenWatches = () => {
+const WomenWatches = ({ addToCart }) => {
   // Filter watches for women's and unisex categories
   const womenWatches = productsData.watches.filter(
     watch => watch.category === 'women' 
@@ -25,8 +25,15 @@ console.log(womenWatches, watchCategories);
   };
 
   const handleAddToCart = (watch) => {
-    // TODO: Implement actual cart functionality
-    // alert(`${watch.name} added to cart!`);
+    addToCart({
+      id: watch.id,
+      name: watch.name,
+      brand: watch.brand,
+      image: watch.image,
+      price: watch.price,
+      discountedPrice: watch.discountedPrice,
+      quantity: 1
+    });
   };
 
   const renderStars = (rating) => {
