@@ -26,7 +26,7 @@ console.log(womenWatches, watchCategories);
 
   const handleAddToCart = (watch) => {
     // TODO: Implement actual cart functionality
-    alert(`${watch.name} added to cart!`);
+    // alert(`${watch.name} added to cart!`);
   };
 
   const renderStars = (rating) => {
