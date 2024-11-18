@@ -1,13 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Home from './components/pages/Home';
 import MenWatches from './components/pages/MenWatches';
 import WomenWatches from './components/pages/WomenWatches';
-
+import ProductDetails from './components/pages/ProductDetails';
 
 function App() {
-  const [cartItems, setCartItems] = useState([]);
+  // Initialize cart items from localStorage or empty array
+  const [cartItems, setCartItems] = useState(() => {
+    const savedCart = localStorage.getItem('cartItems');
+    return savedCart ? JSON.parse(savedCart) : [];
+  });
+
+  // Save cart items to localStorage whenever they change
+  useEffect(() => {
+    localStorage.setItem('cartItems', JSON.stringify(cartItems));
+  }, [cartItems]);
 
   const addToCart = (product) => {
     setCartItems(prevItems => {
@@ -62,6 +71,10 @@ function App() {
           <Route 
             path="/women" 
             element={<WomenWatches addToCart={addToCart} />} 
+          />
+          <Route 
+            path="/product/:id" 
+            element={<ProductDetails addToCart={addToCart} />} 
           />
         </Routes>
       </div>
