@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './CartSidebar.css';
+import CheckoutPopup from '../CheckoutPopup/CheckoutPopup';
 
 const CartSidebar = ({ onClose, cartItems = [], updateQuantity, removeFromCart }) => {
+  const [showCheckout, setShowCheckout] = useState(false);
+
   const calculateTotal = () => {
     return cartItems.reduce((total, item) => total + (item.discountedPrice * item.quantity), 0).toFixed(2);
   };
@@ -9,6 +12,16 @@ const CartSidebar = ({ onClose, cartItems = [], updateQuantity, removeFromCart }
   const handleQuantityChange = (item, change) => {
     const newQuantity = item.quantity + change;
     updateQuantity(item.id, newQuantity);
+  };
+
+  const handleCheckoutClick = () => {
+    setShowCheckout(true);
+  };
+
+  const handleCheckoutSubmit = (formData) => {
+    console.log('Checkout data:', formData);
+    setShowCheckout(false);
+    onClose();
   };
 
   return (
@@ -28,7 +41,15 @@ const CartSidebar = ({ onClose, cartItems = [], updateQuantity, removeFromCart }
                   <div key={item.id} className="cart-item">
                     <img src={item.image} alt={item.name} />
                     <div className="item-details">
-                      <h3>{item.name}</h3>
+                      <div className="item-header">
+                        <h3>{item.name}</h3>
+                        <button 
+                          className="delete-button"
+                          onClick={() => removeFromCart(item.id)}
+                        >
+                          ×
+                        </button>
+                      </div>
                       <p className="brand">{item.brand}</p>
                       <div className="price-quantity">
                         <p className="price">${item.discountedPrice}</p>
@@ -57,12 +78,24 @@ const CartSidebar = ({ onClose, cartItems = [], updateQuantity, removeFromCart }
                   <span>Total:</span>
                   <span>${calculateTotal()}</span>
                 </div>
-                <button className="checkout-btn">Proceed to Checkout</button>
+                <button 
+                  className="checkout-btn"
+                  onClick={handleCheckoutClick}
+                >
+                  Proceed to Checkout
+                </button>
               </div>
             </>
           )}
         </div>
       </div>
+
+      {showCheckout && (
+        <CheckoutPopup
+          onClose={() => setShowCheckout(false)}
+          onSubmit={handleCheckoutSubmit}
+        />
+      )}
     </div>
   );
 };

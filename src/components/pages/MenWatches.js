@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './MenWatches.css';
 import productsData from '../../data/products.json';
 
@@ -68,7 +69,9 @@ console.log(menWatches, watchCategories);
           <div className="watches-grid">
             {menWatches && menWatches?.map(watch => (
               <div key={watch.id} className="watch-card">
-                <img src={watch.image} alt={watch.name} />
+                <Link to={`/product/${watch.id}`}>
+                  <img src={watch.image} alt={watch.name} />
+                </Link>
                 <div className="watch-details">
                   <h2 className="brand">{watch.brand}</h2>
                   <h3>{watch.name}</h3>
